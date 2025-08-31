@@ -1,5 +1,5 @@
 /*
-8.Write a program to find the duplicate elements in an array.
+6. Write a program to find the duplicate elements in an array.
 */
 import java.util.Scanner;
 public class DuplicateElements

@@ -1,5 +1,5 @@
 /*
-7.Write a program to rotate an array by k positions.
+5.Write a program to rotate an array by k positions.
 */
 import java.util.Scanner;
 public class RotateArray

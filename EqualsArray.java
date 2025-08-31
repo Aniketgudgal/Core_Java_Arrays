@@ -1,5 +1,5 @@
 /*
-3.Write a program to check if two arrays are equal (same elements in the same order).
+2.Write a program to check if two arrays are equal (same elements in the same order).
 */
 import java.util.Scanner;
 public class EqualsArray

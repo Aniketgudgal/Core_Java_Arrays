@@ -1,5 +1,5 @@
 /*
-5.Write a program to sort an array in ascending order without using built-in sort methods.
+3.Write a program to sort an array in ascending order without using built-in sort methods.
 */
 import java.util.Scanner;
 public class AscendingOrderSort

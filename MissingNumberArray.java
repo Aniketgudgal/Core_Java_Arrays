@@ -1,5 +1,5 @@
 /*
-6.Write a program to find the missing number in an array of n consecutive integers.
+4.Write a program to find the missing number in an array of n consecutive integers.
 */
 import java.util.Scanner;
 public class MissingNumberArray
