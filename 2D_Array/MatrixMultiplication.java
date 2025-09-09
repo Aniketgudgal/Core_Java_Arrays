@@ -7,9 +7,9 @@ public class MatrixMultiplication
 	public static void main(String x[])
 	{
 		Scanner xyz = new Scanner(System.in);
-		int nums1[][] = new int[3][3];
-		int nums2[][] = new int[3][3];
-		int sum[][] = new int[3][3];
+		int nums1[][] = new int[2][2];
+		int nums2[][] = new int[2][2];
+		int sum[][] = new int[2][2];
 		//inset value in first array
 		System.out.printf("Enter the value in first array\n");
 		for(int i = 0; i < nums1.length; i++)
@@ -30,16 +30,26 @@ public class MatrixMultiplication
 		}
 		
 		// multiplication of two array
+		/* 
+			this is the mathematical formula to calculate the matrix multiplication
+			C=A×B
+					3
+		   C[i][j]= ∑   A[i][k]×B[k][j]; 
+				   k=1
+		*/
 		for(int i = 0; i < sum.length; i++)
 		{
 			for(int j = 0; j < sum[i].length; j++)
 			{
-				for(int k = j ; k < sum.length ; k++)
+				int add = 0; // this store the multiplication of number
+				for(int k = 0 ; k < sum.length ; k++)
 				{
-					sum[k][j]= nums1[k][j]*nums2[j][k];
+					add += nums1[i][k]*nums2[k][j] ;
 				}
+				sum[i][j] = add; // store that multiplication and addition on third matrix
 			}
 		}
+		// display the matrix
 		System.out.printf("Array\n");
 		for(int i =0; i < sum.length; i++)
 		{
