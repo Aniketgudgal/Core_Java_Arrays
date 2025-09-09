@@ -22,3 +22,9 @@ __________________________
  The given array is:
  2 3 3 5 3 4 1 7 7 7 7
  The maximum repeating number is: 7
+
+8. Check Prime numbers in array and print it
+
+9. find duck number of a array.
+
+10. Write a java program to find armstrong number of a array.
