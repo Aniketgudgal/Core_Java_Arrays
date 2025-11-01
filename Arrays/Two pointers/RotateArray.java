@@ -1,5 +1,5 @@
 /*
-Right Rotate an Array by k position (using Reversal Algorithm)
+Right Rotate an Array by k positions (using Reversal Algorithm)
 */
 import java.util.Scanner;
 public class RotateArray
