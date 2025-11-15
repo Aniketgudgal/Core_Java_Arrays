@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class MatrixMultiplication1
+{
+	public static void main(String x[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int[][] a1 = new int[3][3];
+		int[][] a2 = new int[3][3];
+		int[][] result = new int[3][3];
+		// Enter values in first array
+		System.out.println("Enter the values in Array 1st");
+		for(int i = 0; i < a1.length; i++)
+		{
+			for(int j = 0; j < a1[i].length; j++)
+			{
+				a1[i][j] = sc.nextInt();
+			}
+		}
+		// enter values in second array
+		System.out.println("Enter values in array 2nd");
+		for(int i = 0; i < a2.length; i++)
+		{
+			for(int j = 0; j < a2[i].length; j++)
+			{
+				a2[i][j] = sc.nextInt();
+			}
+		}
+		for(int i = 0; i < result.length; i++)
+		{
+			for(int j = 0; j < result[i].length; j++)
+			{
+				for(int k = j; k < result[i].length; k++)
+				{
+					result[i][k] = a1[i][j]*a2[i][k];
+				}
+			}
+		}
+		// display the result array
+		System.out.println("Result");
+		for(int i = 0; i < result.length; i++)
+		{
+			for(int j = 0; j < result[i].length; j++)
+			{
+				System.out.print(" "+result[i][j]);
+			}
+			System.out.println();
+		}
+	}
+}
